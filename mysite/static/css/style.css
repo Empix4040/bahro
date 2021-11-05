@@ -8,6 +8,7 @@ body {
     font-family: 'Fauna One', serif;
     font-size: 17px;
     line-height: 1.8!important;
+    border-width: none;
 }
 html {
     overflow-x: hidden;
@@ -35,8 +36,9 @@ li {
     color: #666;
 }
 section {
-    padding-top: 185px;
+    padding-top: 65px;
     padding-bottom: 185px;
+    
 }
 .no-gutter {
     padding-right: 0;
@@ -98,7 +100,7 @@ a:visited {
     display: inline-block;
     border: none;
     float: right;
-    z-index: 99999;
+    z-index: 1;
 }
 .navbar-fixed-top {
     padding-top: 10px;
@@ -108,7 +110,7 @@ a:visited {
 }
 .navbar-brand > img {
     max-width: auto;
-    z-index: 9999;
+    z-index: 1;
 }
 @media (max-width: 768px) {
     .navbar-brand {
@@ -447,7 +449,7 @@ a:visited {
 #headslide .carousel-inner > .item > a > img {
     height: 100%;
     max-width: none;
-    object-fit: cover;
+    
     width: 100%;
 }
 #header h1,
@@ -464,7 +466,7 @@ a:visited {
 /*---------- Portfolio ----------*/
 
 #portfolio {
-    padding-top: 5px;
+    padding:auto;
 }
 .background-image-holder {
     background-attachment: scroll;

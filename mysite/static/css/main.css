@@ -5,15 +5,18 @@ scroll-behavior:smooth;
 .list-group {
 display: none;
 visibility: hidden;
+position:fixed;
 }
 
 .list-group-active {
 display: block;
 visibility: visible;
+position: relative;
 }
 
 .list-group li {
 display: block;
+border-width: 0 0 0px;
 }
 
 @media (min-width: 800px) {
@@ -21,8 +24,9 @@ display: block;
 display: none;
 }
 
+
 .list-group {
-display: block;
+display: inline-block;
 visibility: visible;
 
 }    
@@ -60,7 +64,7 @@ text-align: center;
 .responsive {
 padding: 0 6px;
 float: left;
-width: 32%;
+width: 25%;
 }
 
 
@@ -81,7 +85,7 @@ width: 100%;
 /* Full width */
 height: 100%;
 /* Full height */
-overflow: auto;
+
 /* Enable scroll if needed */
 background-color: rgba(0, 0, 0, 0.9);
 /* Black w/ opacity */
@@ -172,11 +176,26 @@ margin: 6px 0;
 .modal-content {
 width: 100%;
 }
+.ikone{
+    margin-left: auto;
+    top: 320px; 
+    display: inline-block;
+
+
+
+}
+
 }
 
 @media only screen and (max-width: 500px) {
 .responsive {
 width: 100%;
+}
+.ikone{
+    margin-left: auto;
+    top: 320px;
+    display:inline-block;
+
 }
 }
 
@@ -351,7 +370,7 @@ transform: translateX(100px);
 }
 #active:checked ~ .wrapper ul li a{
 transform: none;
-transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); 
+transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
 transition-delay: .6s;
 transform: translateX(-100px);
 }
@@ -360,4 +379,50 @@ transform: translateX(-100px);
 .slika{
     postition: relative;
     
+}
+
+
+.logo{
+    padding-left: 20px;
+    width: 150px;
+    height: 80px;
+    object-fit: scale-down;
+
+    margin-left: auto;
+    top: 1px;
+    bottom:0;
+    position:fixed;
+    overflow-y:hidden;
+    overflow-x:hidden;
+       
+}
+.ikone{
+    left: 1px;
+    top: 1 px;
+    bottom:0;
+    position:fixed;
+    overflow-y:hidden;
+    overflow-x:hidden;
+       
+}
+.about{
+    margin-left: -10px;
+    padding-top:10px;
+    padding-bottom:0px
+}
+.contact{
+    margin-left: -10px;
+
+}
+.gallery{
+    margin-left: -10px; 
+    margin-bottom: -1px;
+}
+.fontBahro{
+    font-family: Montserrat; 
+    padding-bottom:1px;
+}
+.test{
+    display: inline-block;
+
 }

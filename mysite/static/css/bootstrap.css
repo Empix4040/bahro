@@ -6622,16 +6622,28 @@ button.close {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .row{
+    position: relative;
+    top: 0;
+  }
   .visible-sm-block {
     display: block !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .row{
+    position: relative;
+    top: 0;
+  }
   .visible-sm-inline {
     display: inline !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .row{
+    position: relative;
+    top: 0;
+  }
   .visible-sm-inline-block {
     display: inline-block !important;
   }

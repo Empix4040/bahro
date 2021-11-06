@@ -19,7 +19,7 @@ display: block;
 border-width: 0 0 0px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
 .list-toggle {
 display: none;
 }

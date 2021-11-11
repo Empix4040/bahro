@@ -49,8 +49,9 @@
                </li>
                {% endfor %}
                
-               <h4 class="about">About</h4>
+               <button class="about" id="myBtn">About</button>
                <h4 class="contact">Contact</h4>
+               
                <ul class=" ikone">
                   <a href="https://www.facebook.com/bandiccc"target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a> 
                   <a href="https://www.instagram.com/bandiccc/"target="_blank"><i class="fab fa-instagram fa-lg"></i></a> 
@@ -92,6 +93,81 @@
          </div>
       </div>
       </section>
+      <div id="mymodalno" class="modalno">
+
+         <!-- modalno content -->
+         <div class="modalni-sadrzaj">
+           <span class="closing">&times;</span>
+           <img class = "AboutSlika"src="{% static 'img/bahro profilna.jpg' %}"   style="width:200px">
+           <div class = "AboutIkone">
+           <ul class = "ulOverWrite">
+            <a href="https://www.facebook.com/bandiccc"target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a> 
+            <a class = "InstagramIcon"href="https://www.instagram.com/bandiccc/"target="_blank"><i class="fab fa-instagram fa-2x"></i></a> 
+            <a href="https://www.linkedin.com/search/results/all/?keywords=bahrudin%20bandic&origin=RICH_QUERY_SUGGESTION&position=0&searchId=8cf5e0c5-16ce-470c-939e-c18f9a08cc5e&sid=yIi"target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+         </ul>
+         </div>
+           <div class="row margin-top-45">
+             <div class="col-md-3">
+                <h2>My story</h2>
+             </div>
+             <div class="col-md-9">
+                <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat.
+                </p>
+                <br>
+                <p>  
+                   Etiam at consectetur sapien, vel laoreet diam. Aliquam erat volutpat. Quisque fermentum purus ac justo fermentum vulputate eu id libero. Donec quam ipsum, malesuada nec interdum in, commodo vel nisl. Aliquam erat volutpat. Donec suscipit molestie urna, at pharetra tortor interdum eget. Ut lobortis viverra ex, quis faucibus sapien iaculis in. Suspendisse laoreet ornare justo sit amet fermentum. Pellentesque non nulla id libero pretium bibendum vel nec dolor. 
+                </p>
+             </div>
+          </div>
+          <div class="row margin-top-45">
+             <div class="col-md-3">
+                <h2>Services</h2>
+             </div>
+             <div class="col-md-9">
+                <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat.
+                </p>
+             </div>
+          </div>
+          <div class="row margin-top-45">
+             <div class="col-md-3">
+                <h2>Clients</h2>
+             </div>
+             <div class="col-md-9">
+                <div class="row">
+                   <div class="col-md-4">
+                      <ul class="list-unstyled">
+                         <li>Bugatti</li>
+                         <li>Vogue</li>
+                         <li>Class</li>
+                         <li>Hollister</li>
+                      </ul>
+                   </div>
+                   <div class="col-md-4">
+                      <ul class="list-unstyled">
+                         <li>Zara</li>
+                         <li>Coca Cola</li>
+                         <li>Ferrari</li>
+                         <li>Mercedes Benz</li>
+                      </ul>
+                   </div>
+                   <div class="col-md-4">
+                      <ul class="list-unstyled">
+                         <li>Tiger</li>
+                         <li>Capcom</li>
+                         <li>Zara Home</li>
+                         <li>Martini</li>
+                      </ul>
+
+                   </div>
+                </div>
+             </div>
+          </div>
+         </div>
+       
+       </div>
+       
       <!-- script -->
       <script src="{%static 'js/jquery.js'%}"></script>
       <script src="{%static 'js/bootstrap.min.js'%}"></script>
@@ -174,5 +250,32 @@ $('#img01').click(function(e){
     }
   }
   </script>
+  <script>
+   // Get the modalno
+   var modalno = document.getElementById("mymodalno");
+   
+   // Get the button that opens the modalno
+   var btn = document.getElementById("myBtn");
+   
+   // Get the <span> element that closings the modalno
+   var span = document.getElementsByClassName("closing")[0];
+   
+   // When the user clicks the button, open the modalno 
+   btn.onclick = function() {
+     modalno.style.display = "block";
+   }
+   
+   // When the user clicks on <span> (x), closing the modalno
+   span.onclick = function() {
+     modalno.style.display = "none";
+   }
+   
+   // When the user clicks anywhere outside of the modalno, closing it
+   window.onclick = function(event) {
+     if (event.target == modalno) {
+       modalno.style.display = "none";
+     }
+   }
+   </script>
    </body>
 </html>

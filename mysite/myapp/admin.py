@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Category,Photo
+from .models import Category,Photo,AboutTitle
 
 class PhotoAdmin(admin.StackedInline):
     model = Photo
@@ -15,4 +15,7 @@ class PostAdmin(admin.ModelAdmin):
 @admin.register(Photo)
 class PhotoAdmin(admin.ModelAdmin):
     pass
-# Register your models here.
+
+@admin.register(AboutTitle)
+class AboutTitle(admin.ModelAdmin):
+    pass

@@ -88,7 +88,7 @@
                      </ul>
                   </div>
                </div>
-
+ 
             </div>
          </div>
       </div>
@@ -114,10 +114,7 @@
                 <p>
                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat.
                 </p>
-                <br>
-                <p>  
-                   Etiam at consectetur sapien, vel laoreet diam. Aliquam erat volutpat. Quisque fermentum purus ac justo fermentum vulputate eu id libero. Donec quam ipsum, malesuada nec interdum in, commodo vel nisl. Aliquam erat volutpat. Donec suscipit molestie urna, at pharetra tortor interdum eget. Ut lobortis viverra ex, quis faucibus sapien iaculis in. Suspendisse laoreet ornare justo sit amet fermentum. Pellentesque non nulla id libero pretium bibendum vel nec dolor. 
-                </p>
+   
              </div>
           </div>
           <div class="row margin-top-45">
@@ -199,17 +196,12 @@ span.onclick = function() {
 
 document.getElementById("myModal").onclick=function(){
  modal.style.display = "none";
-
-
 }
 document.getElementById("img01").onclick=function(event){
  modal.style.display = "block";
  event.stopPropagation();
-
 }
 
-// Get all images and insert the clicked image inside the modal
-// Get the content of the image description and insert it inside the modal image caption
 var images = document.getElementsByClassName('slika');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
@@ -222,8 +214,6 @@ for (i = 0; i < images.length; i++) {
     captionText.innerHTML = this.nextElementSibling.innerHTML;
   }
 }
-
-
 $(document).ready(function(){
 $('#img01').click(function(e){
              
@@ -234,11 +224,7 @@ $('#img01').click(function(e){
             });
 
 });
-
-
-
-
-      </script>
+</script>
 
 <script>
   function myFunction() {

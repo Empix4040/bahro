@@ -484,20 +484,28 @@ ul.ikone {
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    font-size: 19px;
+    font-size: 15px;
     font-family:Montserrat;
+    color: #000;
 }
 .contact{
+    font-family:Montserrat;
+    color: #000;
+    font-size: 15px;
     margin-left: -10px;
 
 }
 .gallery{
     font-family:Montserrat;
+    color: #000;
+    font-size: 15px;
     margin-left: -10px; 
     margin-bottom: -1px;
 }
 .fontBahro{
     font-family: Montserrat; 
+    font-size:15px;
+    color: black;
     padding-bottom:1px;
 }
 .test{
@@ -520,7 +528,8 @@ ul.ikone {
   
   /* modalno Content */
   .modalni-sadrzaj {
-    
+    background-color: whitesmoke;
+
     margin: auto;
     border: 1px solid #888;
     

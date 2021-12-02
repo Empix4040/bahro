@@ -469,7 +469,7 @@ ul.ikone {
 }
 .ikone{
     left: 10px;
-    bottom: 1px;
+    bottom: 10px;
     position:fixed;
     font-size: 9px;
 

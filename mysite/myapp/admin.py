@@ -12,9 +12,18 @@ class PostAdmin(admin.ModelAdmin):
     class Meta:
         model = Category
 
-@admin.register(Photo)
 class PhotoAdmin(admin.ModelAdmin):
-    pass
+    
+    list_display = ('id', "image","image_preview")
+    readonly_fields = ('image_preview',)
+
+    def image_preview(self, obj):
+        return obj.image_preview
+
+    image_preview.short_description = 'Image Preview'
+    image_preview.allow_tags = True
+
+admin.site.register(Photo, PhotoAdmin)
 
 @admin.register(AboutTitle)
 class AboutTitle(admin.ModelAdmin):

@@ -468,10 +468,11 @@ ul.ikone {
 }
 }
 .ikone{
-    left: 1px;
-    top: 1 px;
-    bottom:0;
+    left: 10px;
+   
+    bottom: 1px;
     position:fixed;
+    font-size: 9px;
 
 }
 .about{
@@ -488,13 +489,7 @@ ul.ikone {
     font-family:Montserrat;
     color: #000;
 }
-.contact{
-    font-family:Montserrat;
-    color: #000;
-    font-size: 15px;
-    margin-left: -10px;
 
-}
 .gallery{
     font-family:Montserrat;
     color: #000;

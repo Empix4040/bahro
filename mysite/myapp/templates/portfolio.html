@@ -68,12 +68,7 @@
                      
    
                      <!-- The Modal -->
-                     <div id="myModal" class="modal">
-                     <span class="close">×</span>
-                     <img class="modal-content" id="img01">
-                     <div id="caption"></div>
-                     </div>               
-                    
+                  
   
                     <p class = "fontBahro">{{description}}</p>
                     
@@ -84,8 +79,11 @@
                     
                      <div class="gImg">
           
-                      
+                      <a href="{{post.image.url}}"data-lightbox="gallery">
+                        
                         <img  class = "slika" src="{{post.image.url}}" class="rounded" >
+                      </a>
+   
                         
                         
                      </div>
@@ -125,9 +123,7 @@
       <script src="{%static 'js/bootstrap.js'%}"></script>
       <script src="{%static 'js/jquery.js'%}"></script>
       <script src="{%static 'js/jquery.shuffle.min.js'%}"></script>
-      <script src="{%static 'js/lightbox-plus.jquery.js'%}"></script>
-      <script src="{%static 'js/menu-color.js'%}"></script>
-      <script src="{%static 'js/modernizr.js'%}"></script>
+     <script src="{%static 'js/lightbox.min.js'%}"></script>
       <script src="{%static 'js/script.js'%}"></script>
 
       <script>

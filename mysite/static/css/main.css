@@ -64,7 +64,7 @@ object-fit: scale-down;
     width: 25%;
     position: relative;
     animation-name: example;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-fill-mode: both;
 }
 

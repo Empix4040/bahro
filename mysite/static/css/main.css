@@ -38,7 +38,7 @@ display: group;
 .gImg {
 margin: 5px;
 
-padding-top: 10px;
+
 padding-left: 10px;
 padding-right: 10px;
 float: left;
@@ -53,18 +53,19 @@ cursor: pointer;
 object-fit: scale-down;
 }
 
-.gImg.desc {
-padding: 0px;
-text-align: center;
-}
+
 
 
 /* Add Responsiveness */
 
 .responsive {
-padding: 0 6px;
-float: left;
-width: 25%;
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: both;
 }
 
 
@@ -567,3 +568,8 @@ ul.ikone {
     padding-right: 10px;
 }
 
+@keyframes example {
+    from {top: 800px;}
+    to {top: 0px;}
+  }
+  
